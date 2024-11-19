@@ -1,0 +1,47 @@
+<h2>Añadir Receta</h2>
+
+<div class="container w-50">
+
+    <form (ngSubmit)="addReceta()">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre: </label>
+        <input
+          type="text"
+          [(ngModel)]="bocadillos.nombre"
+          class="form-control"
+          id="nombre"
+          name="nombre"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="apellidos" class="form-label">Ingredientes: </label>
+        <input
+          type="text"
+          [(ngModel)]="bocadillos.ingredientes" class="form-control"
+          id="ingredientes"
+          name="ingredientes"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="cif" class="form-label">Imagen: </label>
+        <input
+          type="text"
+          [(ngModel)]="bocadillos.imagen" class="form-control"
+          class="form-control"
+          id="imagen"
+          name="imagen"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="direccion" class="form-label">Pasos: </label>
+        <input
+          type="text"
+          [(ngModel)]="bocadillos.pasos"  class="form-control"
+          class="form-control"
+          id="pasos"
+          name="pasos"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>

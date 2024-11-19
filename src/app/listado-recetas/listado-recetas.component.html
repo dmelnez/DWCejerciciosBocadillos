@@ -1,0 +1,6 @@
+<h2>Recetas de Bocadillos</h2>
+<ul class="list-group">
+    @for (bocadillo of bocadillos; track $index) {
+     <li class="list-group-item"> Nombre: {{bocadillo.nombre}} Pasos: {{bocadillo.pasos}} Ingredientes: {{bocadillo.ingredientes}} Imagen: <img src="{{bocadillo.imagen}}" style="width: 70px;"> </li>
+    }
+</ul>
